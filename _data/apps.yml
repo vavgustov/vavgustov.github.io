@@ -1,0 +1,19 @@
+- title: Open Me
+  description: Browse cards from our hand-curated card boutique featuring Threadless artists from around the globe. Choose a hilarious punchline, write a personal message and upload a personal photo.
+  url: http://www.openme.com
+  image: openme.png
+
+- title: IDEAlliance
+  description: IDEAlliance is a global community of integrated media creators, producers, publishers, distributors, and their service providers, material suppliers, and technology partners.
+  url: http://www.idealliance.org
+  image: idealliance.png
+
+- title: Changemakers
+  description: Changemakers community's mission is to grow new ideas through transparency and collaboration, a process of Open Growth.
+  url: http://www.changemakers.com
+  image: changemakers.png
+
+- title: IDEAlliance Intranet
+  description: Intranet collaboration software for IDEAllince.
+  url: http://communities.idealliance.org
+  image: community.png

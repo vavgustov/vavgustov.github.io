@@ -1,0 +1,27 @@
+<!-- work -->
+<div id="work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">My latest work</h1>
+      </div>
+    </div>
+    <div class="row">
+      {% for app in site.data.apps %}
+        {% cycle '<div class="col-sm-6 col-md-6"><ul class="grid cs-style-1">', nill %}
+        <li>
+          <figure>
+            <img src="/assets/images/portfolio/{{ app.image }}" class="img-thumbnail" alt="{{ app.title }}">
+            <figcaption class="hidden-xs hidden-sm">
+              <h3>{{ app.title }}</h3>
+              <span>{{ app.description }}</span>
+              <a href="{{ app.url }}" class="btn btn-info" target="_blank">Take a look</a>
+            </figcaption>
+          </figure>
+          <a class="visible-xs visible-sm text-center" href="{{ app.url }}" target="_blank">{{ app.url }}</a>
+        </li>
+      {% cycle nill, '</ul></div>' %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

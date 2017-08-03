@@ -1,0 +1,179 @@
+@import "variables";
+@import "bootstrap/bootstrap";
+@import "font-awesome/font-awesome";
+@import "vendor/bootswatch/bootswatch";
+@import "vendor/codrops/caption-hover";
+
+.grid {
+  a {
+    border: none;
+  }
+}
+
+// header
+.navbar-default {
+  .navbar-toggle {
+    border: none;
+  }
+}
+
+// promo
+.jumbotron {
+  padding-bottom: 30px;
+
+  .container {
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+  .promo-description,
+  .promo-links {
+    padding: 10px 0;
+  }
+
+  .btn {
+    margin: 0 10px;
+  }
+}
+
+// about
+#about {
+  .row {
+    text-align: center;
+  }
+
+  .chart {
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+// work
+#work {
+  .img-thumbnail {
+    border-radius: 0;
+    cursor: pointer;
+  }
+}
+
+.cs-style-1 figcaption h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cs-style-1 figcaption a {
+  margin-top: 15px;
+}
+
+.grid {
+  padding: 0;
+
+  li {
+    width: 100%;
+  }
+
+  figcaption {
+    a {
+      background-color: #3498db;
+      border-color: #3498db;
+      text-decoration: none;
+    }
+
+    span {
+      &:before {
+        content: '';
+      }
+    }
+  }
+}
+
+.cs-style-1 {
+  figcaption {
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+
+    span {
+      color: #ffffff;
+    }
+  }
+}
+
+// contact
+#contact {
+  background-color: #eaf1f1;
+
+  .contact-image {
+    width: 150px;
+  }
+}
+
+// animation (lightweight alternative to animate.css)
+.lazy-animation {
+  opacity: 0;
+
+  &.animated {
+    opacity: 1;
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30px, 0);
+    -ms-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+// modal
+.modal-dialog {
+  z-index: 2000;
+}
