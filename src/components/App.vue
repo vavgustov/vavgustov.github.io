@@ -11,13 +11,13 @@
             Ruby on Rails | Full Stack Web Developer
           </h2>
           <div class="social is-size-2 animated fadeInLeft" v-show="showSocial">
-            <a id="github" href="https://github.com/vavgustov" target="_blank">
+            <a id="github" title="GitHub" href="https://github.com/vavgustov" target="_blank">
               <i class="fa fa-github"></i>
             </a>
-            <a id="linkedin" href="https://www.linkedin.com/in/vavgustov" target="_blank">
+            <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/vavgustov" target="_blank">
               <i class="fa fa-linkedin"></i>
             </a>
-            <a id="email" href="mailto:vavgustov@yandex.ru">
+            <a id="email" title="Email" href="mailto:vavgustov@yandex.ru">
               <i class="fa fa-envelope"></i>
             </a>
           </div>
