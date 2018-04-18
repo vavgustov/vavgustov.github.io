@@ -67,7 +67,7 @@
   @import "~animate.css/animate";
   @import "~font-awesome/scss/font-awesome";
 
-  html, body {
+  html {
     background: $bg-color;
   }
 
