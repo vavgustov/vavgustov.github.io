@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="particles-js"></div>
+    <div id="particles-js" class="animated fadeIn"></div>
     <section class="hero is-fullheight has-text-centered">
       <div class="hero-body">
         <div class="container">
@@ -93,6 +93,10 @@
 
   .animated {
     animation-duration: 0.4s;
+
+    &.fadeIn {
+      animation-duration: 10s;
+    }
   }
 
   #particles-js {
