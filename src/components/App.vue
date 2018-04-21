@@ -95,7 +95,7 @@
     animation-duration: 0.4s;
 
     &.fadeIn {
-      animation-duration: 10s;
+      animation-duration: 8s;
     }
   }
 
@@ -103,5 +103,9 @@
     position: absolute;
     height: 100%;
     width: 100%;
+
+    canvas {
+      opacity: 0.5;
+    }
   }
 </style>
