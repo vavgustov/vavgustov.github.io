@@ -11,15 +11,3 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
-
-let tracking = () => {
-  const link_types = ['github', 'linkedin', 'email']
-  mixpanel.track('page view')
-  link_types.forEach((link_type) => {
-    mixpanel.track_links('#' + link_type, 'click link: ' + link_type)
-  })
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  tracking()
-})

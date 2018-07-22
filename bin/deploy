@@ -1,0 +1,15 @@
+#/bin/bash
+
+set -e
+
+yarn build
+
+cp -r ./dist/. ../master/
+
+cd ../master/
+
+git add -A
+git commit -m 'Deploy'
+git push origin master
+
+cd -
